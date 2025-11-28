@@ -1,0 +1,64 @@
+.app {
+  min-height: 100vh;
+}
+
+.screen-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 91, 150, 0.08);
+  border: 1px solid #e2e8f0;
+  margin-bottom: 30px;
+}
+
+.screen-header {
+  background: linear-gradient(135deg, #005B96 0%, #003D66 100%);
+  color: white;
+  padding: 25px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.screen-number {
+  background: rgba(255, 255, 255, 0.2);
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 22px;
+  backdrop-filter: blur(10px);
+}
+
+.screen-title {
+  flex: 1;
+  margin-left: 20px;
+
+  h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+  }
+
+  p {
+    font-size: 16px;
+    opacity: 0.95;
+    font-weight: 400;
+  }
+}
+
+.screen-body {
+  padding: 35px;
+}
+
+.mockup {
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 40px;
+  background: #f8fafc;
+  min-height: 550px;
+}
