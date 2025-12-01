@@ -27,17 +27,17 @@ jobs:
       # Build Docker image
       - name: Build Docker Image
         run: |
-          docker build -t viziappsdemoregistry.azurecr.io/testapp:latest .
+          docker build -t viziappsdemoregistry.azurecr.io/testapp:latest1 .
 
       # Push Docker image to ACR
       - name: Push Docker Image
         run: |
-          docker push viziappsdemoregistry.azurecr.io/testapp:latest
+          docker push viziappsdemoregistry.azurecr.io/testapp:latest1
 
       - name: Deploy to Container Apps
         uses: azure/container-apps-deploy-action@v1
         with:
           resourceGroup: dev
           containerAppName: test-app0213
-          imageToDeploy: viziappsdemoregistry.azurecr.io/testapp:latest
+          imageToDeploy: viziappsdemoregistry.azurecr.io/testapp:latest1
           acrName: viziappsdemoregistry
