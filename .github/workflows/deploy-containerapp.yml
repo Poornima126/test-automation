@@ -33,3 +33,11 @@ jobs:
       - name: Push Docker Image
         run: |
           docker push viziappsdemoregistry.azurecr.io/testapp:latest
+
+      - name: Deploy to Container Apps
+        uses: azure/container-apps-deploy-action@v1
+        with:
+          resourceGroup: dev
+          containerAppName: test-app0213
+          imageToDeploy: viziappsdemoregistry.azurecr.io/testapp:latest
+          acrName: viziappsdemoregistry
