@@ -1,4 +1,4 @@
-# ---- STAGE 1: build the React/Vite app ----
+# ---- STAGE 1: build the React/Vite app ---- updated
 # commenting Dockerfile
 FROM node:20-alpine AS build
 
