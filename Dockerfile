@@ -1,4 +1,5 @@
 # ---- STAGE 1: build the React/Vite app ----
+# testing
 FROM node:20-alpine AS build
 
 WORKDIR /app
